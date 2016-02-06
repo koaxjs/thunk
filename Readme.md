@@ -14,12 +14,12 @@ Koax thunk middleware. Included in Koax to give it thunk support.
 
 ## Middleware
 
-``js
+```js
 function thunk (action, next) {
   if (isFunction(action)) return toPromise(action)
   return next()
 }
-``
+```
 
 ## License
 
